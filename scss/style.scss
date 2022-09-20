@@ -1,15 +1,49 @@
 @import 'base';
 
-.wrapper {}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
 
 .menu {
     background: url(../img/bg.png) no-repeat;
-    width: 1600px;
-    height: 800px;
+	background-size: cover;
+    width: 100%;
+    min-height: 800px;
+		&__row {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 68px 0px 0px 0px;
+		}
+
+		&__links a{
+			font-size: 13px;
+			line-height: 1.2;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: #4d4959;
+		}
+
+		&__img {
+			padding: 0px 63px;
+		}
+}
+
+
+
+.wrapper {
+}
+.menu {
+
 		&__row {
 		}
 
-		&__link {
+		&__links {
+		} a {
+
 		}
 
 		&__img {
