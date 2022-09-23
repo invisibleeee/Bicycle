@@ -197,8 +197,8 @@ position: relative;
 		left: 50%;
 		top: 50%;
 		background: url(../img/bike02_logo.png) 0 0 / 100% no-repeat;
-		width: 11%;
-		padding-top: 11%;
+		width: 16.58%;
+		padding-top: 14.24%;
 		transform: translate(-50%, -50%);
 		z-index: 1;
 	}
@@ -225,7 +225,7 @@ position: relative;
 
 	&__row {
 		display: flex;
-		flex-direction: row-reverse;
+		flex-direction: row;
 		justify-content: center;
 	}
 
@@ -241,8 +241,8 @@ position: relative;
 		left: 50%;
 		top: 50%;
 		background: url(../img/bike03_logo.png) 0 0 / 100% no-repeat;
-		width: 10.59%;
-		padding-top: 11%;
+		width: 39%;
+		padding-top: 12.57%;
 		transform: translate(-50%, -50%);
 		z-index: 1;
 	}
@@ -263,4 +263,60 @@ position: relative;
 		width: 100%;
 		object-fit: cover;
 	}
+}
+
+.twitter {
+	padding: 124px 0px 68px 0px;
+
+	&__container {
+		max-width: 1040px;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		text-align: center;
+		margin: 0px 0px 37px 0px;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		margin: 0px 0px 27px 0px;
+		color: #353738;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 24px;
+		line-height: 1.41;
+		font-style: italic;
+		color: #848789;
+	}
+
+	&__page-links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__page-links a {
+		width: 11px;
+		height: 11px;
+		background-color: rgba(40,47,53,0.0);
+		border: 1px solid #c8c8c8;
+	}
+}
+
+
+.fa-twitter {
+	color: #56c7ee;
+}
+
+.ellipse-1 {
+}
+.ellipse-2 {
+}
+.ellipse-3 {
 }

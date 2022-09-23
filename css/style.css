@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%;
   background: url(../img/bike02_logo.png) 0 0/100% no-repeat;
-  width: 11%;
-  padding-top: 11%;
+  width: 16.58%;
+  padding-top: 14.24%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .bike-3__row {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
 }
 .bike-3__image {
@@ -282,8 +282,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%;
   background: url(../img/bike03_logo.png) 0 0/100% no-repeat;
-  width: 10.59%;
-  padding-top: 11%;
+  width: 39%;
+  padding-top: 12.57%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -302,4 +302,46 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.twitter {
+  padding: 124px 0px 68px 0px;
+}
+.twitter__container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.twitter__logo {
+  text-align: center;
+  margin: 0px 0px 37px 0px;
+}
+.twitter__title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0px 0px 27px 0px;
+  color: #353738;
+}
+.twitter__text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.41;
+  font-style: italic;
+  color: #848789;
+}
+.twitter__page-links {
+  display: flex;
+  flex-direction: column;
+}
+.twitter__page-links a {
+  width: 11px;
+  height: 11px;
+  background-color: rgba(40, 47, 53, 0);
+  border: 1px solid #c8c8c8;
+}
+
+.fa-twitter {
+  color: #56c7ee;
 }
