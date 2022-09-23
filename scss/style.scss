@@ -111,7 +111,7 @@ position: relative;
 	&__text {
 		text-align: justify;
 		font-size: 16px;
-		line-height: 30px;
+		line-height: 1.8;
 		margin: 0px 0px 40px 0px;
 		color: #848789;
 	}
@@ -141,13 +141,13 @@ position: relative;
 			justify-content: center;
 		}
 
-		&__image-big {
+		&__image {
 			flex: 1 1 66.68%;
 			position: relative;
 			background-color: #848789;
 		}
 
-		&__image-big::before {
+		&__image::before {
 			content: "";
 			position: absolute;
 			left: 50%;
@@ -159,7 +159,7 @@ position: relative;
 			z-index: 1;
 		}
 
-		&__image-big img{
+		&__image img{
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -167,18 +167,100 @@ position: relative;
 
 		&__body {
 			display: flex;
-			flex: 1 1 33.31%;
+			flex: 1 1 33.32%;
 			flex-direction: column;
-		}
-
-		&__content {
-		}
-
-		&__image-small {
 		}
 
 		&__image-small img{
 			width: 100%;
 			object-fit: cover;
 		}
+}
+
+.bike-2 {
+
+	&__row {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+
+	&__image {
+		flex: 1 1 66.68%;
+		position: relative;
+		background-color: #848789;
+	}
+
+	&__image::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		background: url(../img/bike02_logo.png) 0 0 / 100% no-repeat;
+		width: 11%;
+		padding-top: 11%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	&__image img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__body {
+		display: flex;
+		flex: 1 1 33.31%;
+		flex-direction: column;
+	}
+
+	&__image-small img{
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.bike-3 {
+
+	&__row {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+
+	&__image {
+		flex: 1 1 33.33%;
+		position: relative;
+		background-color: #848789;
+	}
+
+	&__image::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		background: url(../img/bike03_logo.png) 0 0 / 100% no-repeat;
+		width: 10.59%;
+		padding-top: 11%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	&__image img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__body {
+		display: flex;
+		flex: 1 1 33.31%;
+		flex-direction: column;
+	}
+
+	&__image-small img{
+		width: 100%;
+		object-fit: cover;
+	}
 }

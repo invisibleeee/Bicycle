@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-block__text {
   text-align: justify;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   margin: 0px 0px 40px 0px;
   color: #848789;
 }
@@ -195,12 +195,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: center;
 }
-.bike-1__image-big {
+.bike-1__image {
   flex: 1 1 66.68%;
   position: relative;
   background-color: #848789;
 }
-.bike-1__image-big::before {
+.bike-1__image::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.bike-1__image-big img {
+.bike-1__image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -219,10 +219,86 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bike-1__body {
   display: flex;
-  flex: 1 1 33.31%;
+  flex: 1 1 33.32%;
   flex-direction: column;
 }
 .bike-1__image-small img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bike-2__row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.bike-2__image {
+  flex: 1 1 66.68%;
+  position: relative;
+  background-color: #848789;
+}
+.bike-2__image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url(../img/bike02_logo.png) 0 0/100% no-repeat;
+  width: 11%;
+  padding-top: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.bike-2__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bike-2__body {
+  display: flex;
+  flex: 1 1 33.31%;
+  flex-direction: column;
+}
+.bike-2__image-small img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bike-3__row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.bike-3__image {
+  flex: 1 1 33.33%;
+  position: relative;
+  background-color: #848789;
+}
+.bike-3__image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url(../img/bike03_logo.png) 0 0/100% no-repeat;
+  width: 10.59%;
+  padding-top: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.bike-3__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bike-3__body {
+  display: flex;
+  flex: 1 1 33.31%;
+  flex-direction: column;
+}
+.bike-3__image-small img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
