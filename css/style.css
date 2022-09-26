@@ -447,14 +447,82 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/shop_logo.png) 0 0/100% no-repeat;
   width: 9.56%;
   padding-top: 5.62%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 0%);
   z-index: 1;
 }
 .block-3__image {
   flex: 1 1 50%;
+  position: relative;
+}
+.block-3__image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  z-index: 2;
 }
 .block-3__bottom {
   display: flex;
   flex-direction: row;
   flex: 1 1 50%;
+}
+
+.mailing {
+  padding: 109px 0px 111px 0px;
+}
+.mailing__logo {
+  text-align: center;
+  margin: 0px 0px 39px 0px;
+}
+.mailing__slogan {
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+  margin: 0px 0px 35px 0px;
+}
+.feedback__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.feedback__input {
+  margin: 0px 8px 0px 0px;
+  width: 25%;
+}
+.feedback__input input {
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  color: #848789;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9;
+  padding: 6%;
+}
+.feedback__input ::placeholder {
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+.feedback__btn {
+  width: 7.875%;
+}
+.feedback__btn button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #64c29e;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
 }
