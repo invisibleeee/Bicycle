@@ -526,3 +526,93 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #ffffff;
 }
+
+.footer {
+  padding: 108px 0px;
+}
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__contacts p {
+  font-size: 13.9px;
+  line-height: 1.2;
+  font-style: italic;
+  color: #848789;
+}
+.footer__contacts :first-child {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #848789;
+}
+.footer__links {
+  align-self: center;
+}
+.footer__development {
+  align-self: center;
+}
+.footer__development span {
+  display: inline-block;
+  font-size: 13.9px;
+  line-height: 17px;
+  font-style: italic;
+  color: #848789;
+}
+.links__item {
+  padding: 0px 7.5px;
+}
+
+.fa-twitter {
+  width: 35px;
+  height: 34px;
+  font-size: 24px;
+  border-radius: 16.5px;
+  background-color: #78cdf0;
+  color: #ffffff;
+  position: relative;
+}
+.fa-twitter:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  font-size: 1.4rem;
+}
+
+.fa-facebook {
+  width: 35px;
+  height: 34px;
+  border-radius: 16.5px;
+  background-color: #537bbd;
+  color: #ffffff;
+  position: relative;
+}
+.fa-facebook:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -45%);
+  font-size: 1.4rem;
+}
+
+.fa-pinterest {
+  width: 35px;
+  height: 34px;
+  border-radius: 16.5px;
+  background-color: #eb5755;
+  color: #ffffff;
+  position: relative;
+}
+.fa-pinterest:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -45%);
+  font-size: 1.4rem;
+}
