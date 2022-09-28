@@ -13,7 +13,7 @@
 	padding: 35px 0px 0px 0px;
 }
 .menu {
-	max-width: 620px;
+	width: 620px;
 	margin: 0 auto;
 		&__row {
 			display: flex;
@@ -36,20 +36,6 @@
 
 		a {
 			position: relative;
-		}
-
-		a:first-child:after {
-			content: ".";
-			position: absolute;
-			top: 0px;
-			right: -35px;
-		}
-
-		a:last-child:before {
-			content: ".";
-			position: absolute;
-			top: 0px;
-			left: -35px;
 		}
 }
 
@@ -538,3 +524,6 @@ position: relative;
 		}
 	}
 }
+
+@import 'adaptive';
+

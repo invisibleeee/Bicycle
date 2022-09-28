@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
-  max-width: 620px;
+  width: 620px;
   margin: 0 auto;
 }
 .menu__row {
@@ -108,18 +108,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu a {
   position: relative;
-}
-.menu a:first-child:after {
-  content: ".";
-  position: absolute;
-  top: 0px;
-  right: -35px;
-}
-.menu a:last-child:before {
-  content: ".";
-  position: absolute;
-  top: 0px;
-  left: -35px;
 }
 
 .about-us {
@@ -525,4 +513,45 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (max-width: 1234px) {
+  .menu {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .bike-1__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .bike-1__image {
+    flex: 1 1 66.68%;
+    position: relative;
+    background-color: #848789;
+  }
+  .bike-1__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bike-1__image::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(../img/bike01_logo.png) 0 0/100% no-repeat;
+    width: 10.59%;
+    padding-top: 11%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .bike-1__body {
+    display: flex;
+    flex: 1 1 33.32%;
+    flex-direction: column;
+  }
+  .bike-1__image-small img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
