@@ -1,7 +1,7 @@
-@media (max-width: 1024px) {
+@media (max-width: 1234px) {
     
     .menu {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
             &__row {
                 display: flex;
@@ -22,4 +22,31 @@
             &__img {
             }
     }
+
+    .bike-1, .bike-2, .bike-3 {
+        &__row {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__image {
+			flex: 1 1 auto;
+			position: relative;
+			background-color: #848789;
+		}
+
+		&__body {
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+            text-align: center;
+		}
+
+    }
+
+    .text-block {      
+            &__text {
+                text-align: center;
+        }
+    }    
 }
