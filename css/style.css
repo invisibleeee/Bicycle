@@ -177,6 +177,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1234px) {
+  .text-block {
+    padding: 40px 67px;
+  }
+}
+@media (max-width: 1234px) {
   .text-block__text {
     text-align: center;
   }
@@ -305,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .bike-3__image-left, .bike-3__image-right {
     order: 1;
-    flex: 1 1 533px;
+    flex: 1 1 50%;
   }
   .bike-3__image-left img, .bike-3__image-right img {
     max-width: 100%;

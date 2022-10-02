@@ -118,6 +118,12 @@ position: relative;
 
 @media (max-width: 1234px) {
 	.text-block {
+		padding: 40px 67px;
+	}
+}
+
+@media (max-width: 1234px) {
+	.text-block {
 		&__text {
 			text-align: center;
 		}
@@ -278,7 +284,7 @@ position: relative;
 		&__image-left, 
 		&__image-right {
 			order: 1;
-			flex: 1 1 533px;
+			flex: 1 1 50%;
 			img {
 				max-width: 100%;
 			}
