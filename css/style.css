@@ -93,47 +93,54 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 767px) {
-  .top-wrapper {
-    min-height: 500px;
-  }
+.header {
+  position: fixed;
+  padding: 10px 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
-.menu {
-  width: 620px;
-  margin: 0 auto;
-}
-@media (max-width: 767px) {
-  .menu {
-    width: 100%;
-    background-color: #343744;
-  }
-}
-.menu__row {
+.header__body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-@media (max-width: 767px) {
-  .menu__row {
-    flex-direction: column;
-  }
-}
-.menu__row span {
+.header__body span {
   color: #4d4959;
 }
 @media (max-width: 767px) {
-  .menu__row span {
+  .header__body span {
     color: #ffffff;
   }
 }
+.header__menu {
+  width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
 @media (max-width: 767px) {
-  .menu__burger {
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d4959;
+  }
+}
+@media (max-width: 767px) {
+  .header__burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
   }
-  .menu__burger span {
+  .header__burger span {
     position: absolute;
     background-color: #ffffff;
     position: absolute;
@@ -142,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 2px;
     top: 9px;
   }
-  .menu__burger:before, .menu__burger:after {
+  .header__burger:before, .header__burger:after {
     content: "";
     background-color: #ffffff;
     position: absolute;
@@ -150,14 +157,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 2px;
     left: 0;
   }
-  .menu__burger::before {
+  .header__burger::before {
     top: 0;
   }
-  .menu__burger:after {
+  .header__burger:after {
     bottom: 0;
   }
 }
-.menu__link {
+.header__link {
   font-size: 13px;
   line-height: 1.2;
   font-weight: 700;
@@ -166,13 +173,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #4d4959;
 }
 @media (max-width: 767px) {
-  .menu__link {
-    font-size: 16px;
+  .header__link {
     color: #ffffff;
+    font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .menu__img {
+  .header__img {
     position: absolute;
     width: 70px;
     top: 0;
@@ -180,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0px 0px 15px;
   }
 }
-.menu__img img {
+.header__img img {
   max-width: 100%;
 }
 .about-us {
