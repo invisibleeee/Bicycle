@@ -1,5 +1,9 @@
 @import 'base';
 
+body.lock {
+	overflow: hidden;
+}
+
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -18,7 +22,7 @@
 
 .header {
 	position: fixed;
-	padding: 10px 10px;
+	padding: 10px;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -29,7 +33,7 @@
 			justify-content: center;
 			align-items: center;
 			@media (max-width: 767px) {
-				
+				justify-content: space-between;
 			}
 			span {
 				color: #4d4959;
@@ -40,20 +44,37 @@
 		}
 
 		&__menu {
-			width: 620px;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+			width: 38.75%;
 			padding: 10px 0px 10px 0px;
 			@media (max-width: 767px) {
-				display: flex;
-				flex-direction: column;
 				position: fixed;
-				top: 0;
+				top: -100%;
 				left: 0;
 				width: 100%;
 				height: 100%;
+				overflow: auto;
+				transition: all 0.3s ease 0s;
 				background-color: #4d4959;
+				&.active {
+					top: 0;
+				}
+			}
+		}
+
+		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text-align: center;
+			@media (max-width: 767px) {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				li {
+					margin: 0px 0px 30px 0px;
+				}
 			}
 		}
 
@@ -63,29 +84,47 @@
 				position: relative;
 				width: 30px;
 				height: 20px;
+				right: 0;
 				span {
 					position: absolute;
-					background-color: #ffffff;
-					position: absolute;
+					background-color: #4d4959;
 					left: 0;
 					width: 100%;
 					height: 2px;
 					top: 9px;
+					transition: all 0.3s ease 0s;
 				}
 				&:before,
 				&:after {
 					content: '';
-					background-color: #ffffff;
+					background-color: #4d4959;
 					position: absolute;
 					width: 100%;
 					height: 2px;
 					left: 0;
+					transition: all 0.3s ease 0s;
 				}
-				&::before {
+				&:before {
 					top: 0;
 				}
 				&:after {
 					bottom: 0;
+				}
+				&.active {
+					&:before {
+						transform: rotate(45deg);
+						top: 9px;
+						background-color: #ffffff;
+					}
+					&::after {
+						transform: rotate(-45deg);
+						bottom: 9px;
+						background-color: #ffffff;
+					}
+					span {
+						transform: scale(0);
+						background-color: #ffffff;
+					}
 				}
 			}
 		}
@@ -99,24 +138,18 @@
 			color: #4d4959;
 			@media (max-width: 767px) {
 				color: #ffffff;
-				font-size: 16px;
+				font-size: 24px;
+				margin: 0px 0px 20px 0px;
 				span {}
 			}
 		}
 
-		&__img {
+		&__logo {
 			@media (max-width: 767px) {
-				position: absolute;
-				width: 70px;
-				top: 0;
-				left: 0;
-				padding: 15px 0px 0px 15px;
+				flex: 0 0 70px;
 			}
 			img {
 				max-width: 100%;
-				@media (max-width: 767px) {
-
-				}
 			}
 		}
 }
