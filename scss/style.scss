@@ -17,6 +17,7 @@ body.lock {
 	padding: 35px 0px 0px 0px;
 	@media (max-width: 767px) {
 		padding: 0;
+		height: 100vh;
 	}
 }
 
@@ -73,6 +74,10 @@ body.lock {
 				left: 50%;
 				transform: translate(-50%, -50%);
 				li {
+					margin: 0px 0px 30px 0px;
+				}
+				span {
+					display: block;
 					margin: 0px 0px 30px 0px;
 				}
 			}
